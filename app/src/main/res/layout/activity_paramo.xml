@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/fondogra"
+tools:context=".GalleryActivity">
+
+<ImageView
+    android:id="@+id/paramo"
+    android:layout_width="match_parent"
+    android:layout_height="400dp"
+    android:layout_gravity="center"
+    android:background="@drawable/paramo"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="@string/tit_paramo"
+    android:textColor="@color/colorblack"
+    android:padding="15dp"
+    android:textSize="33dp"
+    android:gravity="center" />
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="15dp"
+    android:layout_gravity="center_vertical|right"
+    android:gravity="right"
+    android:textColor="@color/colorblack"
+    android:text="@string/paramo"
+    android:textSize="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

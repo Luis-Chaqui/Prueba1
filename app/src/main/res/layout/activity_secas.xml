@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@color/colorblank"
+    tools:context=".Secas">
+
+    <ImageView
+        android:id="@+id/secas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/secas"/>
+    <TextView
+        android:padding="50dp"
+        android:layout_width="match_parent"
+        android:textColor="@color/colorblack"
+        android:layout_height="wrap_content"
+        android:text="@string/secas"
+        app:layout_constraintEnd_toEndOf="@+id/secas"/>
+
+</LinearLayout>
