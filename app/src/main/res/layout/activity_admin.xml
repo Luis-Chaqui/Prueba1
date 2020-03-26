@@ -4,33 +4,37 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:theme="@style/Theme.AppCompat.Light.NoActionBar"
     android:orientation="vertical"
-    android:background="@drawable/fondogra"
     tools:context=".JoseMariaactivity">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="350dp"
-        android:background="@drawable/im3"/>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="8dp"
             android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
+            android:background="@drawable/im3"/>
+
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/categoria"
                 android:textColor="@color/colorblack"/>
-            <Button
-                android:layout_width="100dp"
-                android:layout_height="20dp"
-                android:background="@color/colorblank"
-                android:drawableLeft="@mipmap/icon_estrella_foreground"/>
+            <RatingBar
+                android:id="@+id/calificacion"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:numStars="5"
+                android:rating="0"
+                android:scaleX="0.5"
+                android:scaleY="0.5" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -124,6 +128,9 @@
                 </RelativeLayout>
 
             </HorizontalScrollView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
         </LinearLayout>
     </ScrollView>
 

@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:layout_marginTop="100dp">
+        android:layout_marginTop="60dp">
     <Button
         android:id="@+id/volcan"
         android:layout_width="match_parent"
@@ -51,6 +51,15 @@
             android:background="@color/colorblank"
             android:textColor="@color/colorblack"
             android:drawableLeft="@mipmap/icon_secas_foreground"
+            android:layout_margin="10dp"/>
+        <Button
+            android:id="@+id/muerte"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/muertepungo"
+            android:background="@color/colorblank"
+            android:textColor="@color/colorblack"
+            android:drawableLeft="@mipmap/icon_muerte_foreground"
             android:layout_margin="10dp"/>
 
 

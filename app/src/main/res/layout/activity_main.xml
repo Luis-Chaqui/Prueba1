@@ -4,132 +4,129 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:background="@drawable/fondogra"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity">
 
-    <ImageView
-            android:layout_width="250dp"
-            android:layout_height="75dp"
-            android:background="@drawable/logos"
-            android:layout_gravity="center"
-            android:layout_marginTop="30dp"
-        android:layout_margin="20dp"/>
-
-
-
     <ScrollView
+        android:id="@+id/main_inicio"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:fillViewport="true">
+        android:layout_height="wrap_content">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="5dp">
-    <Button
-        android:id="@+id/lugares"
-        android:background="@color/colorblank"
-        android:layout_width="380dp"
-        android:drawableLeft="@mipmap/icon_antisana_foreground"
-        android:layout_height="100dp"
-        android:layout_gravity="center"
-        android:text="@string/lugares"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorblack" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp">
 
-    <Button
-        android:id="@+id/actividades"
-        android:layout_width="380dp"
-        android:layout_gravity="center"
-        android:drawableLeft="@mipmap/icon_actividades_foreground"
-        android:layout_height="100dp"
-        android:background="@color/colorblank"
-        android:text="@string/actividades"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:textColor="@color/colorblack"
-        android:layout_margin="2dp" />
+            <ImageView
+                android:layout_width="250dp"
+                android:layout_height="75dp"
+                android:background="@drawable/logos"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_margin="20dp"
+                android:contentDescription="@string/portada"/>
 
-    <Button
-        android:id="@+id/hospedaje"
-        android:layout_width="380dp"
-        android:layout_gravity="center"
-        android:layout_height="100dp"
-        android:layout_margin="2dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:background="@color/colorblank"
-        android:drawableLeft="@mipmap/icon_hospedaje_foreground"
-        android:textColor="@color/colorblack"
-        android:text="@string/hospedajes" />
-    <Button
-        android:id="@+id/flora"
-        android:layout_width="380dp"
-        android:layout_gravity="center"
-        android:layout_height="100dp"
-        android:background="@color/colorblank"
-        android:drawableLeft="@mipmap/icon_flora_foreground"
-        android:text="@string/flora"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorblack"/>
+            <Button
+                android:id="@+id/lugares"
+                android:background="@color/colorblank"
+                android:layout_width="380dp"
+                android:drawableStart="@mipmap/icon_antisanagallery_foreground"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:text="@string/lugares"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_margin="2dp"
+                android:textColor="@color/colorblack" />
 
-    <Button
-        android:id="@+id/comida"
-        android:layout_width="380dp"
-        android:layout_gravity="center"
-        android:layout_height="100dp"
-        android:background="@color/colorblank"
-        android:drawableLeft="@mipmap/icon_ubicacion_foreground"
-        android:text="@string/alimentacion"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_margin="2dp"
-        android:textColor="@color/colorblack"/>
+            <Button
+                android:id="@+id/actividades"
+                android:layout_width="380dp"
+                android:layout_gravity="center"
+                android:drawableStart="@mipmap/icon_actividades_foreground"
+                android:layout_height="100dp"
+                android:background="@color/colorblank"
+                android:text="@string/actividades"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:textColor="@color/colorblack"
+                android:layout_margin="2dp" />
 
-    <Button
-        android:id="@+id/informacion"
-        android:layout_width="380dp"
-        android:layout_gravity="center"
-        android:layout_height="100dp"
-        android:textColor="@color/colorblack"
-        android:background="@color/colorblank"
-        android:drawableLeft="@mipmap/icon_conocenos_foreground"
-        android:text="@string/info"
-        android:layout_margin="2dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"/>
+            <Button
+                android:id="@+id/hospedaje"
+                android:layout_width="380dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:background="@color/colorblank"
+                android:drawableStart="@mipmap/icon_hospedaje_foreground"
+                android:textColor="@color/colorblack"
+                android:text="@string/hospedajes" />
+            <Button
+                android:id="@+id/flora"
+                android:layout_width="380dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:background="@color/colorblank"
+                android:drawableStart="@mipmap/icon_flora_foreground"
+                android:text="@string/flora"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_margin="2dp"
+                android:textColor="@color/colorblack"/>
+
+            <Button
+                android:id="@+id/comida"
+                android:layout_width="380dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:background="@color/colorblank"
+                android:drawableStart="@mipmap/icon_ubicacion_foreground"
+                android:text="@string/alimentacion"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_margin="2dp"
+                android:textColor="@color/colorblack"/>
+
+            <Button
+                android:id="@+id/informacion"
+                android:layout_width="380dp"
+                android:layout_gravity="center"
+                android:layout_height="100dp"
+                android:textColor="@color/colorblack"
+                android:background="@color/colorblank"
+                android:drawableStart="@mipmap/icon_conocenos_foreground"
+                android:text="@string/info"
+                android:layout_margin="2dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp">
+
+                <ImageButton
+                    android:id="@+id/compartir"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_marginEnd="250dp"
+                    android:background="@drawable/compartir"/>
+
+                <ImageButton
+                    android:id="@+id/inicio"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/ingresar"
+                    android:layout_toRightOf="@id/compartir"/>
 
 
 
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:layout_marginTop="40dp">
-
-        <ImageButton
-            android:id="@+id/compartir"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/compartir"
-            android:layout_marginLeft="150dp"/>
-
-        <ImageButton
-            android:id="@+id/inicio"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/ingresar"
-            android:layout_marginLeft="30dp"
-            android:layout_toRightOf="@+id/compartir"/>
-
-    </LinearLayout>
-</LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
 
     </ScrollView>
 

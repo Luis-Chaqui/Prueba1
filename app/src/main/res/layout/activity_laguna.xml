@@ -5,14 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/fondogra"
     tools:context=".GalleryActivity">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_gravity="center"
-        android:background="@drawable/mica"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -20,24 +14,39 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_gravity="center"
+        android:background="@drawable/mica"/>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/title_mica"
         android:textColor="@color/colorblack"
         android:layout_margin="20dp"
-        android:textSize="33dp"
-        android:gravity="center"
-        android:layout_marginRight="10dp"/>
+        android:textSize="20dp"
+        android:gravity="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/micas"
+                android:gravity="center"
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginStart="20dp"
+                android:padding="10dp"/>
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:layout_marginLeft="40dp"
-        android:layout_marginRight="20dp"
+        android:layout_margin="20dp"
         android:textColor="@color/colorblack"
         android:text="@string/mica"
-        android:textSize="20dp"/>
+        android:textSize="15dp"/>
 
         </LinearLayout>
 

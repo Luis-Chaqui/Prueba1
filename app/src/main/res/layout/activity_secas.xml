@@ -9,16 +9,26 @@
     tools:context=".Secas">
 
     <ImageView
-        android:id="@+id/secas"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/secas"/>
+
     <TextView
-        android:padding="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_margin="20dp"
+        android:padding="20dp"
+        android:textColor="@color/colorblack"
+        android:text="LAGUNA DE SECAS"
+        android:textSize="20dp"/>
+    <TextView
+        android:padding="30dp"
         android:layout_width="match_parent"
         android:textColor="@color/colorblack"
         android:layout_height="wrap_content"
+        android:textSize="15dp"
         android:text="@string/secas"
-        app:layout_constraintEnd_toEndOf="@+id/secas"/>
+        />
 
 </LinearLayout>

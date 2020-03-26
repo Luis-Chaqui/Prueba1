@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".BiodiversidadActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:id="@+id/biod"
+                android:background="@color/oro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/biodiversidad"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bio"
+                android:layout_margin="20dp"/>
+
+            <ImageView
+                android:id="@+id/vena"
+                android:layout_width="match_parent"
+                android:layout_height="550dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/venado"/>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:background="@color/morado"
+                android:gravity="center"
+                android:textColor="@color/colorblank"
+                android:textSize="25dp"
+                android:text="@string/condor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:background="@color/crema"
+                android:layout_height="wrap_content"
+                android:text="@string/condor_contenido"
+                android:layout_margin="20dp"/>
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_margin="20dp"
+                android:background="@drawable/condor"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+               android:layout_margin="20dp"
+                android:text="@string/bio_des"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/curi"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/curiquinge"/>
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                   android:layout_margin="5dp"
+                    android:layout_toRightOf="@+id/curi"
+                    android:background="@drawable/valeriana"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

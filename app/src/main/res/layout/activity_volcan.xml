@@ -5,14 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@drawable/fondogra"
     tools:context=".GalleryActivity">
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="400dp"
-        android:layout_gravity="center"
-        android:background="@drawable/antisana"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
@@ -21,36 +14,68 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-    <TextView
+    <ImageView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="20dp"
-        android:text="@string/title_volcan"
-        android:textColor="@color/colorblack"
-        android:textSize="33dp"
-        android:gravity="center"
-        android:layout_margin="10dp"
-        android:layout_marginRight="10dp"/>
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="10dp"
-        android:gravity="center_horizontal|left"
-        android:layout_gravity="right"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:textColor="@color/colorblack"
-        android:text="@string/volcan"
-        android:textSize="20dp"/>
+        android:layout_height="400dp"
+        android:background="@drawable/antisana"/>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:text="@string/title_volcan"
+        android:gravity="center"
+        android:textSize="20dp"
         android:layout_margin="10dp"
+        android:padding="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localización"
+                android:layout_margin="10dp"/>
+            <Button
+                android:layout_width="150dp"
+                android:background="@drawable/btn_main"
+                android:layout_height="30dp"
+                android:text="Napo y Pichinca"
+                android:layout_marginStart="40dp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Localización"
+                android:layout_margin="10dp"/>
+            <Button
+                android:id="@+id/provincia"
+                android:layout_width="150dp"
+                android:background="@drawable/btn_main"
+                android:layout_height="30dp"
+                android:text="5.704 m"
+                android:layout_marginStart="40dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:textColor="@color/colorblack"
+        android:text="@string/todoantisana"
+        android:textSize="15dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorblack"
+            android:text="@string/text_1"
+            android:textSize="20dp"
+            android:layout_margin="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
         android:text="@string/text_2"
-        android:gravity="center_vertical|right"
-        android:layout_gravity="right"
-        android:textColor="@color/colorblack"/>
+        android:textColor="@color/colorblack"
+        android:textSize="15dp"/>
+
         </LinearLayout>
     </ScrollView>
 

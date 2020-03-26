@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class GalleryActivity extends AppCompatActivity {
-Button volcan, mica, paramo,secas; //Declaracion de Variables
+Button volcan, mica, paramo,secas,muerte; //Declaracion de Variables
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,15 @@ Button volcan, mica, paramo,secas; //Declaracion de Variables
         mica= (Button)findViewById(R.id.mica);
         paramo= (Button)findViewById(R.id.paramo);
         secas =(Button)findViewById(R.id.secas);
+        muerte = (Button)findViewById(R.id.muerte);
+
+        muerte.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(GalleryActivity.this,Muertepungo.class);
+                startActivity(intent);
+            }
+        });
 
 
         /*accion para dirigir a los botones de acceso a las diferentes activity*/
